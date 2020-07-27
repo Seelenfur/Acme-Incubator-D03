@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	
+	
+	<!-- Bulletin -->
+	
+	<!-- JimenezBulletin -->
+	<bean id="JimenezBulletin01" class="acme.entities.bulletins.JimenezBulletin">
+		<property name="heroName" value="Thanos"/>
+		<property name="phrase" value="Yo soy inevitable"/>
+		<property name="moment" value="2020/01/20 10:00"/>
+	</bean>
+	
+	<!-- DonaireBulletin -->
+	<bean id="DonaireBulletin01" class="acme.entities.bulletins.DonaireBulletin">
+		<property name="author" value="Carlos Ruiz Zafón"/>
+		<property name="text" value="La sombra del viento"/>
+		<property name="moment" value="2020/05/01 21:00"/>
+	</bean>
+	
+	<!-- FernandezBulletin -->
+	<bean id="FernandezBulletin01" class="acme.entities.bulletins.FernandezBulletin">
+		<property name="nameCharacter" value="Solaire"/>
+		<property name="skills" value="The power of sunlight"/>
+		<property name="moment" value="2020/03/01 21:00"/>
+	</bean>
+	
+	<!-- MarinBulletin -->
+	<bean id="MarinBulletin01" class="acme.entities.bulletins.MarinBulletin">
+		<property name="web" value="https://www.game.es/"/>
+		<property name="description" value="Página de una tienda de videojuegos."/>
+		<property name="moment" value="2020/02/01 21:00"/>
+	</bean>
+	
+	<!-- GonzalezBulletin -->
+	<bean id="GonzalezBulletin01" class="acme.entities.bulletins.GonzalezBulletin">
+		<property name="movie" value="Interstellar"/>
+		<property name="director" value="Christopher Nolan"/>
+		<property name="moment" value="2020/07/10 17:00"/>
+	</bean>
+
+
+	
+	<!-- TechnologyRecords -->
+	<bean id="Technology01" class="acme.entities.technologies.Technology">
+		<property name="title" value="Title 1"/>
+		<property name="activitySector" value="Sector 1"/>
+		<property name="inventorName" value="Name 1"/>
+		<property name="description" value="Description 1"/>
+		<property name="webSite" value="https://www.website1.com/"/>
+		<property name="email" value="email1@gmail.com"/>
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="3"/>
+	</bean>
+	<bean id="Technology02" class="acme.entities.technologies.Technology">
+		<property name="title" value="Title 2"/>
+		<property name="activitySector" value="Sector 2"/>
+		<property name="inventorName" value="Name 2"/>
+		<property name="description" value="Description 2"/>
+		<property name="webSite" value="https://www.website2.com/"/>
+		<property name="email" value="email2@gmail.com"/>
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="-5"/>
+	</bean>
+	<bean id="Technology03" class="acme.entities.technologies.Technology">
+		<property name="title" value="Title 3"/>
+		<property name="activitySector" value="Sector 3"/>
+		<property name="inventorName" value="Name 3"/>
+		<property name="description" value="Description 3"/>
+		<property name="webSite" value="https://www.website3.com/"/>
+		<property name="email" value="email3@gmail.com"/>
+		<property name="indication" value="open-source"/>
+		<property name="stars"><null/></property>
+	</bean>
+
+
+	<!-- Notice1 -->
+	<bean id="Notice01" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Notice 1"/>
+		<property name="creationMoment" value="2020/07/21 18:00"/>
+		<property name="deadline" value="2020/12/20 17:00"/>
+		<property name="body" value="Body Notice 1"/>
+		<property name="links" value=""/>
+	</bean>
+	<!-- Notice2 -->
+	<bean id="Notice02" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Notice 2"/>
+		<property name="creationMoment" value="2020/07/21 18:00"/>
+		<property name="deadline" value="2020/07/22 11:00"/>
+		<property name="body" value="Body Notice 2, esta noticia solo deberia de aparecer cuando somos Admin"/>
+		<property name="links" value=""/>
+	</bean>
+
+
+	
+	<!-- Inquires -->
+	
+	<bean id="Inquirie01" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="my first inquirie"/>
+		<property name="creationDate" value="2020/07/20 17:00"></property>
+		<property name="endDate" value="2020/12/10 17:00"/>
+		<property name="description" value="this is the first inquire."></property>
+		<property name="minMoney" value="20.23€"></property>
+		<property name="maxMoney" value="100.23€"></property>
+		<property name="email" value="inquire@gmail.com"></property>
+	</bean>
+	
+	<bean id="Inquirie02" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="my second inquirie"/>
+		<property name="creationDate" value="2020/06/20 17:00"></property>
+		<property name="endDate" value="2020/12/11 17:00"/>
+		<property name="description" value="this is the second inquire."></property>
+		<property name="minMoney" value="20.24€"></property>
+		<property name="maxMoney" value="400.23€"></property>
+		<property name="email" value="inquire2@gmail.com"></property>
+	</bean>
+
+
+
+	<!-- Challenge -->
+	
+	<bean id="Challenge01" class="acme.entities.challenges.Challenge">
+		<property value="Title Challenge 01" name="title"/>
+		<property value="2021/06/20 22:00" name="deadline"/>
+		<property value="Sample description 01" name="description"/>		
+		<property value="Challenge rookie goal 01" name="rookieGoal"/>		
+		<property value="50€" name="rookieReward"/>		
+		<property value="Challenge average goal 01" name="averageGoal"/>		
+		<property value="75€" name="averageReward"/>		
+		<property value="Challenge expert goal 01" name="expertGoal"/>	
+		<property value="125€" name="expertReward"/>
+	</bean>
+	
+	<bean id="Challenge02" class="acme.entities.challenges.Challenge">
+		<property value="Title Challenge 02" name="title"/>
+		<property value="2020/08/05 22:00" name="deadline"/>
+		<property value="Sample description 02" name="description"/>		
+		<property value="Challenge rookie goal 02" name="rookieGoal"/>		
+		<property value="100€" name="rookieReward"/>		
+		<property value="Challenge average goal 02" name="averageGoal"/>		
+		<property value="200€" name="averageReward"/>		
+		<property value="Challenge expert goal 02" name="expertGoal"/>	
+		<property value="300€" name="expertReward"/>
+	</bean>
+	
+	<bean id="Challenge03" class="acme.entities.challenges.Challenge">
+		<property value="Title Challenge 03" name="title"/>
+		<property value="2020/02/05 22:00" name="deadline"/>
+		<property value="Sample description 03" name="description"/>		
+		<property value="Challenge rookie goal 03" name="rookieGoal"/>		
+		<property value="200€" name="rookieReward"/>		
+		<property value="Challenge average goal 03" name="averageGoal"/>		
+		<property value="300€" name="averageReward"/>		
+		<property value="Challenge expert goal 03" name="expertGoal"/>	
+		<property value="400€" name="expertReward"/>
+	</bean>
+
+
+
+	<!-- Customisation -->
+	
+	<bean id="Customisation" class="acme.entities.customisations.Customisation">
+		<property name="spamwords" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar,sexo,duro,has ganado,millon de dolares"/>
+		<property name="threshold" value="2.50"/>
+		<property name="activitySectors" value="Technology,Science,Arts,Business,Health"/>
+	</bean>
+	
+	
+	
+	<!-- Overture -->
+	
+	<bean id="Overture01" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 1" />
+		<property name="moment" value="2020/03/10 11:00" />
+		<property name="deadline" value="2020/11/20 10:00" />
+		<property name="description" value="This is a description 1" />
+		<property name="email" value="overture01@gmail.com" />
+		<property name="minMoney" value="100.0€" />
+		<property name="maxMoney" value="700.0€" />
+	</bean>
+	
+	<bean id="Overture02" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 2" />
+		<property name="moment" value="2020/01/01 15:00" />
+		<property name="deadline" value="2020/11/10 10:00" />
+		<property name="description" value="This is a description 2" />
+		<property name="email" value="overture2@gmail.com" />
+		<property name="minMoney" value="200.0€" />
+		<property name="maxMoney" value="800.0€" />
+	</bean>
+	
+	
+	
+	<!-- Tool Records -->
+	
+	<bean id="ToolRecord01" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 1" />
+		<property name="sector" value="Sector 1" />
+		<property name="inventor" value="Inventor 1" />
+		<property name="description" value="This is a description 1" />
+		<property name="web" value="https://www.website1.com/" />
+		<property name="email" value="email1@gmail.com" />
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="2" />
+	</bean>
+	
+	<bean id="ToolRecord02" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 2" />
+		<property name="sector" value="Sector 2" />
+		<property name="inventor" value="Inventor 2" />
+		<property name="description" value="This is a description 2" />
+		<property name="web" value="https://www.website2.com/" />
+		<property name="email" value="email2@gmail.com" />
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="-3" />
+	</bean>
+	
+	<bean id="ToolRecord03" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 3" />
+		<property name="sector" value="Sector 3" />
+		<property name="inventor" value="Inventor 3" />
+		<property name="description" value="This is a description 3" />
+		<property name="web" value="https://www.website3.com/" />
+		<property name="email" value="email3@gmail.com" />
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="5" />
+	</bean>
+	
+	<bean id="ToolRecord04" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 4" />
+		<property name="sector" value="Sector 1" />
+		<property name="inventor" value="Inventor 2" />
+		<property name="description" value="This is a description 4" />
+		<property name="web" value="https://www.website4.com/" />
+		<property name="email" value="email4@gmail.com" />
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="2" />
+	</bean>
+	
+	<bean id="ToolRecord05" class="acme.entities.toolRecords.ToolRecord">
+		<property name="title" value="Tool Record 5" />
+		<property name="sector" value="Sector 3" />
+		<property name="inventor" value="Inventor 1" />
+		<property name="description" value="This is a description 5" />
+		<property name="web" value="https://www.website5.com/" />
+		<property name="email" value="email5@gmail.com" />
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="5" />
+	</bean>
+
+
+
+</beans>

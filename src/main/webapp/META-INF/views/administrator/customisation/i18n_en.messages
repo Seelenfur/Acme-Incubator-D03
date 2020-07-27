@@ -1,0 +1,5 @@
+administrator.customisation.form.label.spamwords = Spamwords
+administrator.customisation.form.label.threshold = Threshold
+administrator.customisation.form.label.activitySectors = Activity sectors
+
+administrator.customisation.form.button.return = Return
