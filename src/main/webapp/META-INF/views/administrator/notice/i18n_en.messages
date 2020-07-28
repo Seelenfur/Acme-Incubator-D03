@@ -5,6 +5,7 @@ administrator.notice.form.label.deadline = Deadline
 administrator.notice.form.label.body = Body
 administrator.notice.form.label.links = Links
 administrator.notice.form.button.return = Return
+administrator.notice.form.button.create = Create
 
 administrator.notice.list.label.creationMoment = Creation moment
 administrator.notice.list.label.title = Title

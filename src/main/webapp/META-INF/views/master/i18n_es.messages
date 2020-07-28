@@ -54,6 +54,7 @@ master.menu.anonymous.links = Enlaces
 
 master.menu.anonymous.notice = Anuncios
 master.menu.anonymous.list-notice = Lista de Anuncios
+master.menu.administrator.create-notice = Crear Anuncios
 
 master.menu.anonymous.technology = Registro de Tecnologia
 master.menu.anonymous.list-technology = Lista de registros de tecnologia

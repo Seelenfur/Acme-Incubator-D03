@@ -93,7 +93,8 @@
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
 			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
-      <acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
+			<acme:menu-suboption code="master.menu.administrator.create-notice" action="/administrator/notice/create"/>
+     		<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
