@@ -12,5 +12,7 @@
 	<acme:form-money code="authenticated.overture.form.label.minMoney" path="minMoney"/>
 	<acme:form-money code="authenticated.overture.form.label.maxMoney" path="maxMoney"/>
 	
+	<acme:form-return code="administrator.overture.form.button.update" action="/administrator/overture/update"/>
+	<acme:form-submit code="administrator.overture.form.button.delete" action="/administrator/overture/delete"/>	
 	<acme:form-return code="authenticated.overture.form.button.return"/>
 </acme:form>
