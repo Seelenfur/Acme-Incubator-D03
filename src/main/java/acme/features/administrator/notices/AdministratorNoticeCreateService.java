@@ -1,6 +1,7 @@
 package acme.features.administrator.notices;
 
 
+import java.awt.Checkbox;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.notices.Notice;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
@@ -43,7 +45,14 @@ public class AdministratorNoticeCreateService implements AbstractCreateService<A
 		assert model != null;
 
 		request.unbind(entity, model, "headerPicture", "title", "creationMoment", "deadline", "body", "links");
-	}
+		
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("accept", "false");
+		} else {
+			request.transfer(model, "accept");
+		}
+		
+		}
 
 	@Override
 	public Notice instantiate(final Request<Notice> request) {
@@ -59,6 +68,11 @@ public class AdministratorNoticeCreateService implements AbstractCreateService<A
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		//Comprobamos checkbox
+		Boolean isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "administrator.notice.form.error.accept");
+
 
 	}
 

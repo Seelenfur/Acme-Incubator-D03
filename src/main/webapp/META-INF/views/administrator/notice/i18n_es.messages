@@ -6,6 +6,8 @@ administrator.notice.form.label.body = Cuerpo
 administrator.notice.form.label.links = Links
 administrator.notice.form.button.return = Atras
 administrator.notice.form.button.create = Crear
+administrator.notice.form.label.checkbox = Confirmar
+administrator.notice.form.error.accept = Error 
 
 administrator.notice.list.label.creationMoment = Creacion
 administrator.notice.list.label.title = Titulo
