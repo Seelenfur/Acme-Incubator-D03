@@ -95,6 +95,7 @@
 			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-notice" action="/administrator/notice/create"/>
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.list-tool-record" action="/administrator/tool-record/list" />
 			<acme:menu-suboption code="master.menu.administrator.create-tool-record" action="/administrator/tool-record/create" />

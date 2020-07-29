@@ -23,6 +23,9 @@ public class AdministratorNoticeController extends AbstractController<Administra
 	private AdministratorNoticeListService		listService;
 	
 	@Autowired
+	private AdministratorNoticeCreateService	createService;
+
+	@Autowired
 	private AdministratorNoticeShowService	showService;
 
 	// Constructors -----------------------------------------------------------
@@ -31,5 +34,6 @@ public class AdministratorNoticeController extends AbstractController<Administra
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 }
