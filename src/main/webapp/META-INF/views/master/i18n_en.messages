@@ -101,6 +101,10 @@ master.menu.administrator.list-tool-record = List of Tool Records
 master.menu.administrator.dashboard = Dashboard
 
 master.menu.administrator.chart = Chart
+master.menu.administrator.list-challenge = List challenge
+master.menu.administrator.create-challenge = Create challenge
+master.menu.administrator.update-challenge = Update challenge
+master.menu.administrator.delete-challenge = Delete challenge
 
 # master.menu.provider ########################################################
 
