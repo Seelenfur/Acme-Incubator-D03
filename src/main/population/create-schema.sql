@@ -83,22 +83,22 @@
     create table `fernandez_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
         `moment` datetime(6),
-        `web` varchar(255),
+        `name_character` varchar(255),
+        `skills` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
     create table `gonzalez_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
+        `director` varchar(255),
         `moment` datetime(6),
-        `web` varchar(255),
+        `movie` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `inquire` (
+    create table `inquirie` (
        `id` integer not null,
         `version` integer not null,
         `creation_date` datetime(6),

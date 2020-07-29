@@ -39,7 +39,7 @@
 
     drop table if exists `gonzalez_bulletin`;
 
-    drop table if exists `inquire`;
+    drop table if exists `inquirie`;
 
     drop table if exists `jimenez_bulletin`;
 

@@ -23,10 +23,10 @@ public class AdministratorNoticeController extends AbstractController<Administra
 	private AdministratorNoticeListService		listService;
 	
 	@Autowired
-	private AdministratorNoticeCreateService	showService;
+	private AdministratorNoticeCreateService	createService;
 
 	@Autowired
-	private AdministratorNoticeShowService	createService;
+	private AdministratorNoticeShowService	showService;
 
 	// Constructors -----------------------------------------------------------
 
