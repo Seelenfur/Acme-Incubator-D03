@@ -106,6 +106,11 @@
    
       <acme:menu-separator />
       
+      <acme:menu-suboption code="master.menu.administrator.list-inquirie" action="/administrator/inquirie/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-inquirie" action="/administrator/inquirie/create"/>
+   
+      <acme:menu-separator />
+      
 			<acme:menu-suboption code="master.menu.administrator.list-tool-record" action="/administrator/tool-record/list" />
 			<acme:menu-suboption code="master.menu.administrator.create-tool-record" action="/administrator/tool-record/create" />
       
