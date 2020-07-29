@@ -91,15 +91,34 @@
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
+      
+			<acme:menu-separator />
+      
 			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
+      <acme:menu-suboption code="master.menu.administrator.create-notice" action="/administrator/notice/create"/>
+      
+			<acme:menu-separator />
+      
 			<acme:menu-suboption code="master.menu.administrator.list-overture" action="/administrator/overture/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-overture" action="/administrator/overture/create"/>
+   
+      <acme:menu-separator />
+      
+			<acme:menu-suboption code="master.menu.administrator.list-tool-record" action="/administrator/tool-record/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-tool-record" action="/administrator/tool-record/create" />
+      
+			<acme:menu-separator />
+      
       <acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/show"/>
+      
 			<acme:menu-separator/>
+      
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
+		
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>

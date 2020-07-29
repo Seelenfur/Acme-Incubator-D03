@@ -54,6 +54,7 @@ master.menu.anonymous.links = Enlaces
 
 master.menu.anonymous.notice = Anuncios
 master.menu.anonymous.list-notice = Lista de Anuncios
+master.menu.administrator.create-notice = Crear Anuncios
 
 master.menu.anonymous.technology = Registro de Tecnologia
 master.menu.anonymous.list-technology = Lista de registros de tecnologia
@@ -93,7 +94,12 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista noticias
+
 master.menu.administrator.list-overture = Lista oberturas
+
+master.menu.administrator.create-tool-record = Crear registro de herramienta
+master.menu.administrator.list-tool-record = List registros de herramientas
+
 master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
 master.menu.administrator.create-overture = Crear obertura

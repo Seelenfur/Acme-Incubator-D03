@@ -54,12 +54,13 @@ master.menu.anonymous.links = Links
 
 master.menu.anonymous.notice = Notices
 master.menu.anonymous.list-notice = List of Notice
+master.menu.administrator.create-notice = Create Notice
 
 master.menu.anonymous.technology = Technology Records
 master.menu.anonymous.list-technology = List of Technology Record
 
 master.menu.anonymous.tool-record = Tool Records
-master.menu.anonymous.list-tool-record = List of Tool Record
+master.menu.anonymous.list-tool-record = List of Tool Records
 
 # master.menu.authenticated ###################################################
 
@@ -95,6 +96,9 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-notice = List notice
 master.menu.administrator.list-overture = List overture
 master.menu.administrator.create-overture = Create overture
+
+master.menu.administrator.create-tool-record = Create Tool Record
+master.menu.administrator.list-tool-record = List of Tool Records
 
 master.menu.administrator.dashboard = Dashboard
 
