@@ -60,7 +60,7 @@ master.menu.anonymous.technology = Technology Records
 master.menu.anonymous.list-technology = List of Technology Record
 
 master.menu.anonymous.tool-record = Tool Records
-master.menu.anonymous.list-tool-record = List of Tool Record
+master.menu.anonymous.list-tool-record = List of Tool Records
 
 # master.menu.authenticated ###################################################
 
@@ -94,6 +94,9 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisation = Customisation
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-notice = List notice
+
+master.menu.administrator.create-tool-record = Create Tool Record
+master.menu.administrator.list-tool-record = List of Tool Records
 
 master.menu.administrator.dashboard = Dashboard
 

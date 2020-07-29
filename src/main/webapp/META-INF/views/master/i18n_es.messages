@@ -94,6 +94,10 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista noticias
+
+master.menu.administrator.create-tool-record = Crear registro de herramienta
+master.menu.administrator.list-tool-record = List registros de herramientas
+
 master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
 
