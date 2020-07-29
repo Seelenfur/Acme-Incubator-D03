@@ -1,3 +1,6 @@
+administrator.overture.list.label.moment = Moment
+administrator.overture.list.label.title = Title
+
 administrator.overture.form.label.title = Title
 administrator.overture.form.label.moment = Moment
 administrator.overture.form.label.deadline = Deadline

@@ -93,6 +93,7 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista noticias
+master.menu.administrator.list-overture = Lista oberturas
 master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
 master.menu.administrator.create-overture = Crear obertura

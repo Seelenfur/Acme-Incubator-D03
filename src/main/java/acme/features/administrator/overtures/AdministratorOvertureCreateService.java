@@ -89,11 +89,16 @@ public class AdministratorOvertureCreateService implements AbstractCreateService
 			isMinMoneyLowerThanMaxMoney = minMoney < maxMoney;
 			errors.state(request, isMinMoneyLowerThanMaxMoney, "minMoney", "administrator.overture.error.minMoneyLower");
 		}
-
 	}
 
 	@Override
 	public void create(final Request<Overture> request, final Overture entity) {
+		assert request != null;
+		assert entity != null;
+
+		Date moment = new Date(System.currentTimeMillis() - 1);
+		entity.setMoment(moment);
+
 		this.repository.save(entity);
 	}
 }

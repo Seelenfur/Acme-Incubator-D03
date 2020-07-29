@@ -93,6 +93,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisation = Customisation
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-notice = List notice
+master.menu.administrator.list-overture = List overture
 master.menu.administrator.create-overture = Create overture
 
 master.menu.administrator.dashboard = Dashboard
