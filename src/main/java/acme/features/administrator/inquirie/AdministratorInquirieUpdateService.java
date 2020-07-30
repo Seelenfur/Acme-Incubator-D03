@@ -1,5 +1,5 @@
 
-package acme.features.administrator.overtures;
+package acme.features.administrator.inquirie;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.overtures.Overture;
+import acme.entities.inquiries.Inquirie;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -16,22 +16,23 @@ import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractUpdateService;
 
 @Service
-public class AdministratorOvertureUpdateService implements AbstractUpdateService<Administrator, Overture> {
+public class AdministratorInquirieUpdateService implements AbstractUpdateService<Administrator, Inquirie> {
 
 	// Internal state ------------------------------------------------------------------
+
 	@Autowired
-	AdministratorOvertureRepository repository;
+	AdministratorInquirieRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Overture> request) {
+	public boolean authorise(final Request<Inquirie> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Overture> request, final Overture entity, final Errors errors) {
+	public void bind(final Request<Inquirie> request, final Inquirie entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -40,66 +41,69 @@ public class AdministratorOvertureUpdateService implements AbstractUpdateService
 	}
 
 	@Override
-	public void unbind(final Request<Overture> request, final Overture entity, final Model model) {
+	public void unbind(final Request<Inquirie> request, final Inquirie entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "description", "email", "minMoney", "maxMoney");
+		request.unbind(entity, model, "title", "creationDate", "endDate", "description", "minMoney", "maxMoney", "email");
+
 	}
 
 	@Override
-	public Overture findOne(final Request<Overture> request) {
+	public Inquirie findOne(final Request<Inquirie> request) {
 		assert request != null;
 
-		Overture result;
+		Inquirie result;
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
-
+		result = this.repository.findOneInquireById(id);
 		return result;
 	}
 
 	@Override
-	public void validate(final Request<Overture> request, final Overture entity, final Errors errors) {
+	public void validate(final Request<Inquirie> request, final Inquirie entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 
-		boolean isDeadlineFuture, isMinMoneyEuro, isMaxMoneyEuro, isMinMoneyLowerThanMaxMoney;
+		boolean isEndDateFuture, isMinMoneyEuro, isMaxMoneyEuro, isMinMoneyLowerThanMaxMoney;
 
-		if (!errors.hasErrors("deadline")) {
+		if (!errors.hasErrors("endDate")) {
 			Calendar calendar = new GregorianCalendar();
 			Date currentMoment = calendar.getTime();
-			isDeadlineFuture = request.getModel().getDate("deadline").after(currentMoment);
-			errors.state(request, isDeadlineFuture, "deadline", "administrator.overture.error.deadline");
+			isEndDateFuture = request.getModel().getDate("endDate").after(currentMoment);
+			errors.state(request, isEndDateFuture, "endDate", "administrator.inquirie.error.endDate");
 		}
 
 		if (!errors.hasErrors("minMoney")) {
 			String minMoney = entity.getMinMoney().getCurrency();
 			isMinMoneyEuro = minMoney.equals("€") || minMoney.equals("EUR");
-			errors.state(request, isMinMoneyEuro, "minMoney", "administrator.overture.error.minMoney");
+			errors.state(request, isMinMoneyEuro, "minMoney", "administrator.inquirie.error.minMoney");
 		}
 
 		if (!errors.hasErrors("maxMoney")) {
 			String maxMoney = entity.getMaxMoney().getCurrency();
 			isMaxMoneyEuro = maxMoney.equals("€") || maxMoney.equals("EUR");
-			errors.state(request, isMaxMoneyEuro, "maxMoney", "administrator.overture.error.maxMoney");
+			errors.state(request, isMaxMoneyEuro, "maxMoney", "administrator.inquirie.error.maxMoney");
 		}
 
 		if (!errors.hasErrors("minMoney") || !errors.hasErrors("maxMoney")) {
 			Double minMoney = entity.getMinMoney().getAmount();
 			Double maxMoney = entity.getMaxMoney().getAmount();
 			isMinMoneyLowerThanMaxMoney = minMoney < maxMoney;
-			errors.state(request, isMinMoneyLowerThanMaxMoney, "minMoney", "administrator.overture.error.minMoneyLower");
+			errors.state(request, isMinMoneyLowerThanMaxMoney, "minMoney", "administrator.inquirie.error.minMoneyLower");
 		}
 	}
 
 	@Override
-	public void update(final Request<Overture> request, final Overture entity) {
+	public void update(final Request<Inquirie> request, final Inquirie entity) {
 		assert request != null;
 		assert entity != null;
+
+		//		Date moment = new Date(System.currentTimeMillis() - 1);
+		//		entity.setCreationDate(moment);
 
 		this.repository.save(entity);
 	}
