@@ -104,6 +104,10 @@ master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
 master.menu.administrator.create-overture = Crear obertura
 
+master.menu.administrator.list-challenge = Lista de desafios
+master.menu.administrator.create-challenge = Crear desafios
+master.menu.administrator.update-challenge = Actualizar desafios
+master.menu.administrator.delete-challenge = Borrar desafios
 
 # master.menu.provider ########################################################
 
