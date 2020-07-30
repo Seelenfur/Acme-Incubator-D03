@@ -95,11 +95,14 @@ master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista noticias
 
+master.menu.administrator.list-overture = Lista oberturas
+
 master.menu.administrator.create-tool-record = Crear registro de herramienta
 master.menu.administrator.list-tool-record = List registros de herramientas
 
 master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
+master.menu.administrator.create-overture = Crear obertura
 
 master.menu.administrator.list-challenge = Lista de desafios
 master.menu.administrator.create-challenge = Crear desafios
