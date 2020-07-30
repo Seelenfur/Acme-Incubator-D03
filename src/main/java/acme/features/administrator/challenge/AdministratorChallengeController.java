@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import acme.entities.challenges.Challenge;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
+
 
 @Controller
 @RequestMapping("/administrator/challenge/")
-public class AdministratorChallengeController extends AbstractController<Authenticated, Challenge> {
+public class AdministratorChallengeController extends AbstractController<Administrator, Challenge> {
 
 	@Autowired
 	private AdministratorChallengeListService	listService;

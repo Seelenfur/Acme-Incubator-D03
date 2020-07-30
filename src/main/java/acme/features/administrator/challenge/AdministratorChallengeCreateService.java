@@ -10,12 +10,12 @@ import acme.entities.challenges.Challenge;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AdministratorChallengeCreateService implements AbstractCreateService<Authenticated, Challenge> {
+public class AdministratorChallengeCreateService implements AbstractCreateService<Administrator, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -40,10 +40,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 
 	@Override
 	public void create(final Request<Challenge> request, final Challenge entity) {
-		Date moment;
-
-		moment = new Date(System.currentTimeMillis() - 1);
-		entity.setCreationMoment(moment);
+		
 
 		this.repository.save(entity);
 
@@ -55,7 +52,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "moment");
+		request.bind(entity, errors);
 	}
 
 	@Override

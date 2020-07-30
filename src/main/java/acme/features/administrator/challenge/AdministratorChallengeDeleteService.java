@@ -8,13 +8,13 @@ import acme.entities.challenges.Challenge;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 
 import acme.framework.services.AbstractDeleteService;
 
 
 @Service
-public class AdministratorChallengeDeleteService implements AbstractDeleteService<Authenticated, Challenge> {
+public class AdministratorChallengeDeleteService implements AbstractDeleteService<Administrator, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -51,7 +51,7 @@ public class AdministratorChallengeDeleteService implements AbstractDeleteServic
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "moment");
+		request.bind(entity, errors);
 	}
 
 	

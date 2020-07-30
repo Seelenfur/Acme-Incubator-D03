@@ -9,12 +9,13 @@ import org.springframework.stereotype.Service;
 import acme.entities.challenges.Challenge;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
+
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AdministratorChallengeListService implements AbstractListService<Authenticated, Challenge> {
+public class AdministratorChallengeListService implements AbstractListService<Administrator, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -25,12 +26,8 @@ public class AdministratorChallengeListService implements AbstractListService<Au
 	@Override
 	public boolean authorise(final Request<Challenge> request) {
 		assert request != null;
-		Boolean res = false;
-		Principal principal = request.getPrincipal();
-		if (principal.isAuthenticated()) {
-			res = true;
-		}
-		return res;
+		
+		return true;
 	}
 
 	@Override

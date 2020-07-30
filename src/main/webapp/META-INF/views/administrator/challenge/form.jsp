@@ -5,12 +5,6 @@
 
 <acme:form>
 	<acme:form-textbox code="administrator.challenge.form.label.title" path="title"/>
-	<jstl:if test = "${command != 'create' }">
-		<acme:form-moment
-			code="administrator.challenge.form.label.creationMoment"
-			path="creationMoment"
-			readonly="true"/>
-	</jstl:if>
 	<acme:form-moment code="administrator.challenge.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.challenge.form.label.description" path="description"/>
 	<acme:form-textarea code="administrator.challenge.form.label.rookieGoal" path="rookieGoal"/>

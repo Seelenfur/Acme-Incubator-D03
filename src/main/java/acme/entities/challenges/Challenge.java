@@ -54,7 +54,5 @@ public class Challenge extends DomainEntity {
 	@NotNull
 	private Money				expertReward;
 	
-	@Temporal(TemporalType.TIMESTAMP)
-	@Past
-	private Date		creationMoment;
+	
 }

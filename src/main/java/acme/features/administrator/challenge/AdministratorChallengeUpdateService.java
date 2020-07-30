@@ -10,11 +10,12 @@ import acme.entities.challenges.Challenge;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
+
 import acme.framework.services.AbstractUpdateService;
 
 @Service
-public class AdministratorChallengeUpdateService implements AbstractUpdateService<Authenticated, Challenge> {
+public class AdministratorChallengeUpdateService implements AbstractUpdateService<Administrator, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -37,7 +38,7 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "moment");
+		request.bind(entity, errors);
 	}
 
 	@Override
@@ -69,9 +70,7 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert request != null;
 		assert entity != null;
 
-		Date moment;
-		moment = new Date(System.currentTimeMillis() - 1);
-		entity.setCreationMoment(moment);
+		
 		this.repository.save(entity);
 	}
 

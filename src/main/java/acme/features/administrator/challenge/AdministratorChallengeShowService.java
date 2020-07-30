@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 import acme.entities.challenges.Challenge;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorChallengeShowService implements AbstractShowService<Authenticated, Challenge> {
+public class AdministratorChallengeShowService implements AbstractShowService<Administrator, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
