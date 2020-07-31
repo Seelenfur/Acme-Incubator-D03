@@ -103,6 +103,9 @@ master.menu.administrator.create-inquirie = Create inquirie
 master.menu.administrator.create-tool-record = Create Tool Record
 master.menu.administrator.list-tool-record = List of Tool Records
 
+master.menu.administrator.list-technology = List Technology Record
+master.menu.administrator.create-technology = Create Technology Record
+
 master.menu.administrator.dashboard = Dashboard
 
 master.menu.administrator.chart = Chart

@@ -88,7 +88,7 @@ public class AdministratorOvertureUpdateService implements AbstractUpdateService
 			errors.state(request, isMaxMoneyEuro, "maxMoney", "administrator.overture.error.maxMoney");
 		}
 
-		if (!errors.hasErrors("minMoney") || !errors.hasErrors("maxMoney")) {
+		if (!errors.hasErrors("minMoney") && !errors.hasErrors("maxMoney")) {
 			Double minMoney = entity.getMinMoney().getAmount();
 			Double maxMoney = entity.getMaxMoney().getAmount();
 			isMinMoneyLowerThanMaxMoney = minMoney < maxMoney;

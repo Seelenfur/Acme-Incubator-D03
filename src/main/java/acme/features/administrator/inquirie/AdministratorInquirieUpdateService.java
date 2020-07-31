@@ -89,7 +89,7 @@ public class AdministratorInquirieUpdateService implements AbstractUpdateService
 			errors.state(request, isMaxMoneyEuro, "maxMoney", "administrator.inquirie.error.maxMoney");
 		}
 
-		if (!errors.hasErrors("minMoney") || !errors.hasErrors("maxMoney")) {
+		if (!errors.hasErrors("minMoney") && !errors.hasErrors("maxMoney")) {
 			Double minMoney = entity.getMinMoney().getAmount();
 			Double maxMoney = entity.getMaxMoney().getAmount();
 			isMinMoneyLowerThanMaxMoney = minMoney < maxMoney;
@@ -101,9 +101,6 @@ public class AdministratorInquirieUpdateService implements AbstractUpdateService
 	public void update(final Request<Inquirie> request, final Inquirie entity) {
 		assert request != null;
 		assert entity != null;
-
-		//		Date moment = new Date(System.currentTimeMillis() - 1);
-		//		entity.setCreationDate(moment);
 
 		this.repository.save(entity);
 	}

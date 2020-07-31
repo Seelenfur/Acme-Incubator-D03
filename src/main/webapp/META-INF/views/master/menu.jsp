@@ -116,6 +116,11 @@
       
       <acme:menu-separator/>
       
+      		<acme:menu-suboption code="master.menu.administrator.list-technology" action="/administrator/technology/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-technology" action="/administrator/technology/create" />
+      
+      <acme:menu-separator/>
+      
 			<acme:menu-suboption code="master.menu.administrator.list-challenge" action="/administrator/challenge/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-challenge" action="/administrator/challenge/create"/>
 			
