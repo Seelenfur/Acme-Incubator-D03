@@ -41,7 +41,6 @@
         `average_goal` varchar(255),
         `average_reward_amount` double precision,
         `average_reward_currency` varchar(255),
-        `creation_moment` datetime(6),
         `deadline` datetime(6),
         `description` varchar(255),
         `expert_goal` varchar(255),

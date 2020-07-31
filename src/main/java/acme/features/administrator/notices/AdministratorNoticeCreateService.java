@@ -2,7 +2,9 @@ package acme.features.administrator.notices;
 
 
 import java.awt.Checkbox;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -73,6 +75,16 @@ public class AdministratorNoticeCreateService implements AbstractCreateService<A
 		Boolean isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "administrator.notice.form.error.accept");
 
+		//Comprobamos que el deadline es fecha futura
+
+		boolean isDeadlineFuture;
+		
+		if (!errors.hasErrors("deadline")) {
+			Calendar calendar = new GregorianCalendar();
+			Date currentMoment = calendar.getTime();
+			isDeadlineFuture = request.getModel().getDate("deadline").after(currentMoment);
+			errors.state(request, isDeadlineFuture, "deadline", "administrator.challenge.error.deadline");
+		}
 
 	}
 
