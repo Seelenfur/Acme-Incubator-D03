@@ -60,7 +60,7 @@ master.menu.anonymous.technology = Registro de Tecnologia
 master.menu.anonymous.list-technology = Lista de registros de tecnologia
 
 master.menu.anonymous.tool-record = Registro de Herramientas
-master.menu.anonymous.list-tool-record = List registros de herramientas
+master.menu.anonymous.list-tool-record = Lista de registros de herramientas
 
 # master.menu.authenticated ###################################################
 
@@ -68,13 +68,13 @@ master.menu.authenticated = Autenticado
 
 
 master.menu.authenticated.inquirie = Consultas
-master.menu.authenticated.list-inquirie = List de consultas
+master.menu.authenticated.list-inquirie = Lista de consultas
 
 master.menu.authenticated.challenge = Desafio
 master.menu.authenticated.list-challenge = Lista de desafios
 
 master.menu.authenticated.overture = Oberturas
-master.menu.authenticated.list-overture = List de oberturas
+master.menu.authenticated.list-overture = Lista de oberturas
 
 master.menu.authenticated.notice = Anuncios
 master.menu.authenticated.list-notice = Lista de Anuncios
@@ -83,7 +83,7 @@ master.menu.authenticated.technology = Registro de Tecnologia
 master.menu.authenticated.list-technology = Lista de registros de tecnologia
 
 master.menu.authenticated.tool-record = Registro de Herramientas
-master.menu.authenticated.list-tool-record = List registros de herramientas
+master.menu.authenticated.list-tool-record = Lista registros de herramientas
 
 
 
@@ -102,7 +102,10 @@ master.menu.administrator.list-inquirie = Lista de consultas
 master.menu.administrator.create-inquirie = Crear consulta
 
 master.menu.administrator.create-tool-record = Crear registro de herramienta
-master.menu.administrator.list-tool-record = List registros de herramientas
+master.menu.administrator.list-tool-record = Lista de registros de herramientas
+
+master.menu.administrator.list-technology = Lista de registros de tecnologías
+master.menu.administrator.create-technology = Crear registro de tecnología
 
 master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
