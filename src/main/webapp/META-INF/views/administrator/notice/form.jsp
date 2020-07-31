@@ -14,8 +14,10 @@
 	<acme:form-textarea code="administrator.notice.form.label.body" path="body"/>
 	<acme:form-url code="administrator.notice.form.label.links" path="links"/>
 	
+	
+	<jstl:if test="${command == 'create'}">
 	<acme:form-checkbox code="administrator.notice.form.label.checkbox" path="accept"/>
-
-	<acme:form-submit test ="${command =='create'}" code="administrator.notice.form.button.create" action="/administrator/notice/create"/>
+	<acme:form-submit  code="administrator.notice.form.button.create" action="/administrator/notice/create"/>
+	</jstl:if>
 	<acme:form-return code="administrator.notice.form.button.return"/>
 </acme:form>
