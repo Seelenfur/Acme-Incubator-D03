@@ -107,6 +107,9 @@ master.menu.administrator.list-tool-record = Lista de registros de herramientas
 master.menu.administrator.list-technology = Lista de registros de tecnologías
 master.menu.administrator.create-technology = Crear registro de tecnología
 
+master.menu.administrator.list-banner = Lista de Banners
+master.menu.administrator.create-banner = Crear Banner
+
 master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
 

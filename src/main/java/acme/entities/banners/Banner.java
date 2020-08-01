@@ -43,6 +43,6 @@ public class Banner extends DomainEntity {
 
 	private Integer				yearExpiration;
 
-	@Pattern(regexp = "^[0-9]{3}$", message = "{administrator.creditCard.ccv.pattern}")
-	private Integer				cvv;
+	@Pattern(regexp = "^[0-9]{3,4}$")
+	private String				cvv;
 }

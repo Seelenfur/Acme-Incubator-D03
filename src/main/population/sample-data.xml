@@ -266,6 +266,34 @@
 		<property name="indication" value="open-source"/>
 		<property name="stars" value="5" />
 	</bean>
+	
+	
+	
+	<!-- Banners -->
+	
+	<bean id="Banner01" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://pbs.twimg.com/media/CO8i4GIWoAEc7-d.jpg" />
+		<property name="slogan" value="Aniram al ne etatsila" />
+		<property name="url" value="https://es.wikipedia.org/wiki/Armada_de_los_Estados_Unidos" />
+		<property name="holderName" value="Homero" />
+		<property name="number" value="5224746025394443" />
+		<property name="brand" value="Simpson" />
+		<property name="monthExpiration" value="11"/>
+		<property name="yearExpiration" value="2031"/>
+		<property name="cvv" value="234" />
+	</bean>
+	
+	<bean id="Banner02" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://s0.mundogamers.com/img/news/23124/destroy_all_humans_regresa_con_humor_y_las_interesantes_estructuras_clasicas_de_juego_1.jpg" />
+		<property name="slogan" value="MUUUtantes" />
+		<property name="url" value="https://www.vidaextra.com/analisis/retorno-destroy-all-humans-muestra-divertidisimo-potencial-doble-a-descerebrado-e-irreverente" />
+		<property name="holderName" value="Crypto" />
+		<property name="number" value="6432109876543210" />
+		<property name="brand" value="Destroy All Human" />
+		<property name="monthExpiration" value="03"/>
+		<property name="yearExpiration" value="2021"/>
+		<property name="cvv" value="123" />
+	</bean>
 
 
 

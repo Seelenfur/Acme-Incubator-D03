@@ -126,6 +126,11 @@
 			
       <acme:menu-separator />
       
+      		<acme:menu-suboption code="master.menu.administrator.list-banner" action="/administrator/banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-banner" action="/administrator/banner/create"/>
+			
+      <acme:menu-separator />
+      
       <acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/show"/>
       
