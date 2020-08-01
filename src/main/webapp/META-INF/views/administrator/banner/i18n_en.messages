@@ -15,3 +15,6 @@ administrator.banner.form.button.return = Return
 
 administrator.banner.list.label.slogan = Slogan
 administrator.banner.list.label.brand = Brand
+anonymous.banner.list.label.slogan = Slogan
+anonymous.banner.list.label.brand = Brand
+

@@ -43,6 +43,7 @@ public class Banner extends DomainEntity {
 
 	private Integer				yearExpiration;
 
-	@Pattern(regexp = "^[0-9]{3}$")
+	@NotBlank
+	@Pattern(regexp = "^[0-9]{3,4}$")
 	private Integer				cvv;
 }

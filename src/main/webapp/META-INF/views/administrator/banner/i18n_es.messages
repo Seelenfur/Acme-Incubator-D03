@@ -15,3 +15,5 @@ administrator.banner.form.button.return = Volver
 
 administrator.banner.list.label.slogan = Eslogan
 administrator.banner.list.label.brand = Marca
+anonymous.banner.list.label.slogan = Eslogan
+anonymous.banner.list.label.brand = Marca
