@@ -25,7 +25,7 @@
 	<acme:form-textbox code="administrator.banner.form.label.brand" path="brand" />
 	<acme:form-integer code="administrator.banner.form.label.monthExpiration" path="monthExpiration" placeholder="1 - 12"/>
 	<acme:form-integer code="administrator.banner.form.label.yearExpiration" path="yearExpiration" placeholder="2021"/>
-	<acme:form-integer code="administrator.banner.form.label.cvv" path="cvv" placeholder="123"/>
+	<acme:form-textbox code="administrator.banner.form.label.cvv" path="cvv" placeholder="123"/>
 	
 	
 	<acme:form-submit test="${command == 'show' }" code="administrator.banner.form.button.update"
