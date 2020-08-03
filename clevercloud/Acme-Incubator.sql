@@ -107,7 +107,7 @@ CREATE TABLE `banner` (
   `id` int(11) NOT NULL,
   `version` int(11) NOT NULL,
   `brand` varchar(255) DEFAULT NULL,
-  `cvv` int(11) DEFAULT NULL,
+  `cvv` varchar(255) DEFAULT NULL,
   `holder_name` varchar(255) DEFAULT NULL,
   `month_expiration` int(11) DEFAULT NULL,
   `number` varchar(255) DEFAULT NULL,
@@ -160,7 +160,6 @@ CREATE TABLE `challenge` (
 
 LOCK TABLES `challenge` WRITE;
 /*!40000 ALTER TABLE `challenge` DISABLE KEYS */;
-INSERT INTO `challenge` VALUES (18,0,'Challenge average goal 01',75,'€','2021-06-20 20:00:00.000000','Sample description 01','Challenge expert goal 01',125,'€','Challenge rookie goal 01',50,'€','Title Challenge 01'),(19,0,'Challenge average goal 02',200,'€','2020-08-05 20:00:00.000000','Sample description 02','Challenge expert goal 02',300,'€','Challenge rookie goal 02',100,'€','Title Challenge 02'),(20,0,'Challenge average goal 03',300,'€','2020-02-05 21:00:00.000000','Sample description 03','Challenge expert goal 03',400,'€','Challenge rookie goal 03',200,'€','Title Challenge 03');
 /*!40000 ALTER TABLE `challenge` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -215,7 +214,6 @@ CREATE TABLE `customisation` (
 
 LOCK TABLES `customisation` WRITE;
 /*!40000 ALTER TABLE `customisation` DISABLE KEYS */;
-INSERT INTO `customisation` VALUES (21,0,'Technology,Science,Arts,Business,Health','sex,hard core,viagra,cialis,nigeria,you\'ve won, million dollar,sexo,duro,has ganado,millon de dolares',2.5);
 /*!40000 ALTER TABLE `customisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -242,7 +240,6 @@ CREATE TABLE `donaire_bulletin` (
 
 LOCK TABLES `donaire_bulletin` WRITE;
 /*!40000 ALTER TABLE `donaire_bulletin` DISABLE KEYS */;
-INSERT INTO `donaire_bulletin` VALUES (7,0,'Carlos Ruiz Zafón','2020-05-01 19:00:00.000000','La sombra del viento');
 /*!40000 ALTER TABLE `donaire_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -269,7 +266,6 @@ CREATE TABLE `fernandez_bulletin` (
 
 LOCK TABLES `fernandez_bulletin` WRITE;
 /*!40000 ALTER TABLE `fernandez_bulletin` DISABLE KEYS */;
-INSERT INTO `fernandez_bulletin` VALUES (8,0,'2020-03-01 20:00:00.000000','Solaire','The power of sunlight');
 /*!40000 ALTER TABLE `fernandez_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -296,7 +292,6 @@ CREATE TABLE `gonzalez_bulletin` (
 
 LOCK TABLES `gonzalez_bulletin` WRITE;
 /*!40000 ALTER TABLE `gonzalez_bulletin` DISABLE KEYS */;
-INSERT INTO `gonzalez_bulletin` VALUES (10,0,'Christopher Nolan','2020-07-10 15:00:00.000000','Interstellar');
 /*!40000 ALTER TABLE `gonzalez_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -318,7 +313,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (29);
+INSERT INTO `hibernate_sequence` VALUES (6);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -384,7 +379,6 @@ CREATE TABLE `inquirie` (
 
 LOCK TABLES `inquirie` WRITE;
 /*!40000 ALTER TABLE `inquirie` DISABLE KEYS */;
-INSERT INTO `inquirie` VALUES (16,0,'2020-07-20 15:00:00.000000','this is the first inquire.','inquire@gmail.com','2020-12-10 16:00:00.000000',100.23,'€',20.23,'€','my first inquirie'),(17,0,'2020-06-20 15:00:00.000000','this is the second inquire.','inquire2@gmail.com','2020-12-11 16:00:00.000000',400.23,'€',20.24,'€','my second inquirie');
 /*!40000 ALTER TABLE `inquirie` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -411,7 +405,6 @@ CREATE TABLE `jimenez_bulletin` (
 
 LOCK TABLES `jimenez_bulletin` WRITE;
 /*!40000 ALTER TABLE `jimenez_bulletin` DISABLE KEYS */;
-INSERT INTO `jimenez_bulletin` VALUES (6,0,'Thanos','2020-01-20 09:00:00.000000','Yo soy inevitable');
 /*!40000 ALTER TABLE `jimenez_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -438,7 +431,6 @@ CREATE TABLE `marin_bulletin` (
 
 LOCK TABLES `marin_bulletin` WRITE;
 /*!40000 ALTER TABLE `marin_bulletin` DISABLE KEYS */;
-INSERT INTO `marin_bulletin` VALUES (9,0,'Página de una tienda de videojuegos.','2020-02-01 20:00:00.000000','https://www.game.es/');
 /*!40000 ALTER TABLE `marin_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -468,7 +460,6 @@ CREATE TABLE `notice` (
 
 LOCK TABLES `notice` WRITE;
 /*!40000 ALTER TABLE `notice` DISABLE KEYS */;
-INSERT INTO `notice` VALUES (14,0,'Body Notice 1','2020-07-21 16:00:00.000000','2020-12-20 16:00:00.000000','https://ar.pinterest.com/pin/833940055989345675/','','Notice 1'),(15,0,'Body Notice 2, esta noticia solo deberia de aparecer cuando somos Admin','2020-07-21 16:00:00.000000','2020-07-22 09:00:00.000000','https://ar.pinterest.com/pin/833940055989345675/','','Notice 2');
 /*!40000 ALTER TABLE `notice` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -501,7 +492,6 @@ CREATE TABLE `overture` (
 
 LOCK TABLES `overture` WRITE;
 /*!40000 ALTER TABLE `overture` DISABLE KEYS */;
-INSERT INTO `overture` VALUES (22,0,'2020-11-20 09:00:00.000000','This is a description 1','overture01@gmail.com',700,'€',100,'€','2020-03-10 10:00:00.000000','Title 1'),(23,0,'2020-11-10 09:00:00.000000','This is a description 2','overture2@gmail.com',800,'€',200,'€','2020-01-01 14:00:00.000000','Title 2');
 /*!40000 ALTER TABLE `overture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -561,8 +551,39 @@ CREATE TABLE `technology` (
 
 LOCK TABLES `technology` WRITE;
 /*!40000 ALTER TABLE `technology` DISABLE KEYS */;
-INSERT INTO `technology` VALUES (11,0,'Sector 1','Description 1','email1@gmail.com','closed-source','Name 1',3,'Title 1','https://www.website1.com/'),(12,0,'Sector 2','Description 2','email2@gmail.com','open-source','Name 2',-5,'Title 2','https://www.website2.com/'),(13,0,'Sector 3','Description 3','email3@gmail.com','open-source','Name 3',NULL,'Title 3','https://www.website3.com/');
 /*!40000 ALTER TABLE `technology` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `technology_record`
+--
+
+DROP TABLE IF EXISTS `technology_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `technology_record` (
+  `id` int(11) NOT NULL,
+  `version` int(11) NOT NULL,
+  `activity_sector` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `indication` varchar(255) DEFAULT NULL,
+  `inventor_name` varchar(255) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `web_site` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `technology_record`
+--
+
+LOCK TABLES `technology_record` WRITE;
+/*!40000 ALTER TABLE `technology_record` DISABLE KEYS */;
+INSERT INTO `technology_record` VALUES (11,0,'Sector 1','Description 1','email1@gmail.com','closed-source','Name 1',3,'Title 1','https://www.website1.com/'),(12,0,'Sector 2','Description 2','email2@gmail.com','open-source','Name 2',-5,'Title 2','https://www.website2.com/'),(13,0,'Sector 3','Description 3','email3@gmail.com','open-source','Name 3',NULL,'Title 3','https://www.website3.com/');
+/*!40000 ALTER TABLE `technology_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -593,7 +614,6 @@ CREATE TABLE `tool_record` (
 
 LOCK TABLES `tool_record` WRITE;
 /*!40000 ALTER TABLE `tool_record` DISABLE KEYS */;
-INSERT INTO `tool_record` VALUES (24,0,'This is a description 1','email1@gmail.com','open-source','Inventor 1','Sector 1',2,'Tool Record 1','https://www.website1.com/'),(25,0,'This is a description 2','email2@gmail.com','closed-source','Inventor 2','Sector 2',-3,'Tool Record 2','https://www.website2.com/'),(26,0,'This is a description 3','email3@gmail.com','open-source','Inventor 3','Sector 3',5,'Tool Record 3','https://www.website3.com/'),(27,0,'This is a description 4','email4@gmail.com','closed-source','Inventor 2','Sector 1',2,'Tool Record 4','https://www.website4.com/'),(28,0,'This is a description 5','email5@gmail.com','open-source','Inventor 1','Sector 3',5,'Tool Record 5','https://www.website5.com/');
 /*!40000 ALTER TABLE `tool_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -624,7 +644,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$HfKID6lPpCxVyuCI5P6G2epDDXuBgHbu8Rb4qC2xx2VVNfdc/OICm','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$f2oRy6ve4UUMqCKhG5bOsODnoMVQzV2dXw94EhAQ7IbQrWfyFT2Oe','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$2WuQkfx/nI2e2ZJg29y/CuvlrVV4078Y8b8uGuVkfF2cYSkQ0KkFG','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$O6ZpKXQpzee7YBXFXmbbBepo5W5c.Cz6qJhWKNGcQmBjgW9O6apau','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -637,4 +657,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-27 21:45:41
+-- Dump completed on 2020-08-03 16:48:11
