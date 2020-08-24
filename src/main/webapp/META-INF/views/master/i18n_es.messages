@@ -32,7 +32,7 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Boletines
 
-master.menu.anonymous.favourite-link = Enlace favorito anonimo
+master.menu.anonymous.favourite-link = Enlace favorito anónimo
 master.menu.anonymous.favourite-link-marin = Enlace favorito de Marín
 master.menu.anonymous.favourite-link-fernandez = Enlace favorito de Fernández
 master.menu.anonymous.favourite-link-jimenez = Enlace favorito de Jiménez
@@ -52,38 +52,38 @@ master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de Gonzál
 
 master.menu.anonymous.links = Enlaces
 
-master.menu.anonymous.notice = Anuncios
+master.menu.anonymous.notice = Anuncio(s)
 master.menu.anonymous.list-notice = Lista de Anuncios
 master.menu.administrator.create-notice = Crear Anuncios
 
-master.menu.anonymous.technology = Registro de Tecnologia
-master.menu.anonymous.list-technology = Lista de registros de tecnologia
+master.menu.anonymous.technology = Registro(s) Tecnológico(s) 
+master.menu.anonymous.list-technology = Lista de Registros Tecnológicos
 
-master.menu.anonymous.tool-record = Registro de Herramientas
-master.menu.anonymous.list-tool-record = Lista de registros de herramientas
+master.menu.anonymous.tool-record = Registro(s) de Herramienta(s)
+master.menu.anonymous.list-tool-record = Lista de Registros de Herramientas
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
 
 
-master.menu.authenticated.inquirie = Consultas
-master.menu.authenticated.list-inquirie = Lista de consultas
+master.menu.authenticated.inquirie = Consulta(s)
+master.menu.authenticated.list-inquirie = Lista de Consultas 
 
-master.menu.authenticated.challenge = Desafio
-master.menu.authenticated.list-challenge = Lista de desafios
+master.menu.authenticated.challenge = Desafío(s)
+master.menu.authenticated.list-challenge = Lista de Desafíos
 
-master.menu.authenticated.overture = Oberturas
-master.menu.authenticated.list-overture = Lista de oberturas
+master.menu.authenticated.overture = Propuesta(s)
+master.menu.authenticated.list-overture = Lista de Propuestas
 
-master.menu.authenticated.notice = Anuncios
+master.menu.authenticated.notice = Anuncio(s)
 master.menu.authenticated.list-notice = Lista de Anuncios
 
-master.menu.authenticated.technology = Registro de Tecnologia
-master.menu.authenticated.list-technology = Lista de registros de tecnologia
+master.menu.authenticated.technology = Registro(s) Tecnológico(s) 
+master.menu.authenticated.list-technology =  Lista de Registros Tecnológicos
 
-master.menu.authenticated.tool-record = Registro de Herramientas
-master.menu.authenticated.list-tool-record = Lista registros de herramientas
+master.menu.authenticated.tool-record = Registro(s) de Herramienta(s)
+master.menu.authenticated.list-tool-record = Lista de Registros de Herramientas
 
 
 

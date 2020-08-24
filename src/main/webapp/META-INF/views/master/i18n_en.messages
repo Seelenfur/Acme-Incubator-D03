@@ -52,15 +52,15 @@ master.menu.anonymous.create-gonzalez-bulletin = Publish in Gonzalez's bulletin
 
 master.menu.anonymous.links = Links
 
-master.menu.anonymous.notice = Notices
-master.menu.anonymous.list-notice = List of Notice
+master.menu.anonymous.notice = Notice(s)
+master.menu.anonymous.list-notice = List of Notice(s)
 master.menu.administrator.create-notice = Create Notice
 
-master.menu.anonymous.technology = Technology Records
-master.menu.anonymous.list-technology = List of Technology Record
+master.menu.anonymous.technology = Technology Record(s)
+master.menu.anonymous.list-technology = List of Technology Record(s)
 
-master.menu.anonymous.tool-record = Tool Records
-master.menu.anonymous.list-tool-record = List of Tool Records
+master.menu.anonymous.tool-record = Tool Record(s)
+master.menu.anonymous.list-tool-record = List of Tool Record(s)
 
 # master.menu.authenticated ###################################################
 
