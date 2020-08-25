@@ -52,14 +52,14 @@ master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de Gonzál
 
 master.menu.anonymous.links = Enlaces
 
-master.menu.anonymous.notice = Anuncio(s)
+master.menu.anonymous.notice = Anuncios
 master.menu.anonymous.list-notice = Lista de Anuncios
 master.menu.administrator.create-notice = Crear Anuncios
 
-master.menu.anonymous.technology = Registro(s) Tecnológico(s) 
+master.menu.anonymous.technology = Registros Tecnológicos 
 master.menu.anonymous.list-technology = Lista de Registros Tecnológicos
 
-master.menu.anonymous.tool-record = Registro(s) de Herramienta(s)
+master.menu.anonymous.tool-record = Registros de Herramientas
 master.menu.anonymous.list-tool-record = Lista de Registros de Herramientas
 
 # master.menu.authenticated ###################################################
@@ -67,22 +67,22 @@ master.menu.anonymous.list-tool-record = Lista de Registros de Herramientas
 master.menu.authenticated = Autenticado
 
 
-master.menu.authenticated.inquirie = Consulta(s)
+master.menu.authenticated.inquirie = Consultas
 master.menu.authenticated.list-inquirie = Lista de Consultas 
 
-master.menu.authenticated.challenge = Desafío(s)
+master.menu.authenticated.challenge = Desafío
 master.menu.authenticated.list-challenge = Lista de Desafíos
 
-master.menu.authenticated.overture = Propuesta(s)
+master.menu.authenticated.overture = Propuesta
 master.menu.authenticated.list-overture = Lista de Propuestas
 
-master.menu.authenticated.notice = Anuncio(s)
+master.menu.authenticated.notice = Anuncio
 master.menu.authenticated.list-notice = Lista de Anuncios
 
-master.menu.authenticated.technology = Registro(s) Tecnológico(s) 
+master.menu.authenticated.technology = Registros Tecnológicos
 master.menu.authenticated.list-technology =  Lista de Registros Tecnológicos
 
-master.menu.authenticated.tool-record = Registro(s) de Herramienta(s)
+master.menu.authenticated.tool-record = Registros de Herramientas
 master.menu.authenticated.list-tool-record = Lista de Registros de Herramientas
 
 
