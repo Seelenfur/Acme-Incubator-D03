@@ -1,6 +1,6 @@
-administrator.dashboard.form.label.numberNotices = Número de Anuncio(s):
-administrator.dashboard.form.label.numberTechnologies = Número de Registro(s) Tecnológico(s):
-administrator.dashboard.form.label.numberTools = Número de Registro(s) de Herramienta(s):
+administrator.dashboard.form.label.numberNotices = Número de Anuncios:
+administrator.dashboard.form.label.numberTechnologies = Número de Registros Tecnológicos:
+administrator.dashboard.form.label.numberTools = Número de Registros de Herramientas:
 
 administrator.dashboard.form.label.minMoneyActiveInquiries = Mínimo Dinero de Consultas Activas:
 administrator.dashboard.form.label.maxMoneyActiveInquiries = Máximo Dinero de Consultas Activas:
