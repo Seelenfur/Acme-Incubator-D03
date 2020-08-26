@@ -21,3 +21,4 @@ administrator.challenge.error.expertReward = Expert tiene que ser en Euros
 administrator.challenge.error.averageReward = Average tiene que ser en Euros
 administrator.challenge.error.rookieReward = Rookie tiene que ser en Euros
 administrator.challenge.error.deadline = Deadline tiene que ser fecha futura
+administrator.challenge.error.deadline.month = La fecha final debe de ser un mes posterior a la fecha actual

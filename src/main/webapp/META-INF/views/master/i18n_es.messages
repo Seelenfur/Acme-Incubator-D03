@@ -54,7 +54,7 @@ master.menu.anonymous.links = Enlaces
 
 master.menu.anonymous.notice = Anuncios
 master.menu.anonymous.list-notice = Lista de Anuncios
-master.menu.administrator.create-notice = Crear Anuncios
+
 
 master.menu.anonymous.technology = Registros Tecnológicos 
 master.menu.anonymous.list-technology = Lista de Registros Tecnológicos
@@ -93,10 +93,11 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
-master.menu.administrator.list-notice = Lista noticias
+master.menu.administrator.list-notice = Lista de anuncios
+master.menu.administrator.create-notice = Crear Anuncio
 
-master.menu.administrator.list-overture = Lista oberturas
-master.menu.administrator.create-overture = Crear obertura
+master.menu.administrator.list-overture = Lista de propuestas
+master.menu.administrator.create-overture = Crear propuesta
 
 master.menu.administrator.list-inquirie = Lista de consultas
 master.menu.administrator.create-inquirie = Crear consulta
@@ -114,10 +115,10 @@ master.menu.administrator.chart = Graficos
 master.menu.administrator.dashboard = Estadísticas
 
 
-master.menu.administrator.list-challenge = Lista de desafios
-master.menu.administrator.create-challenge = Crear desafios
-master.menu.administrator.update-challenge = Actualizar desafios
-master.menu.administrator.delete-challenge = Borrar desafios
+master.menu.administrator.list-challenge = Lista de desafíos
+master.menu.administrator.create-challenge = Crear desafíos
+master.menu.administrator.update-challenge = Actualizar desafíos
+master.menu.administrator.delete-challenge = Borrar desafíos
 
 # master.menu.provider ########################################################
 

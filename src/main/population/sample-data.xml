@@ -61,7 +61,7 @@
 	<!-- TechnologyRecords -->
 	<bean id="Technology01" class="acme.entities.technologies.Technology">
 		<property name="title" value="Title 1"/>
-		<property name="activitySector" value="Sector 1"/>
+		<property name="activitySector" value="Technology"/>
 		<property name="inventorName" value="Name 1"/>
 		<property name="description" value="Description 1"/>
 		<property name="webSite" value="https://www.website1.com/"/>
@@ -71,7 +71,7 @@
 	</bean>
 	<bean id="Technology02" class="acme.entities.technologies.Technology">
 		<property name="title" value="Title 2"/>
-		<property name="activitySector" value="Sector 2"/>
+		<property name="activitySector" value="Health"/>
 		<property name="inventorName" value="Name 2"/>
 		<property name="description" value="Description 2"/>
 		<property name="webSite" value="https://www.website2.com/"/>
@@ -81,7 +81,7 @@
 	</bean>
 	<bean id="Technology03" class="acme.entities.technologies.Technology">
 		<property name="title" value="Title 3"/>
-		<property name="activitySector" value="Sector 3"/>
+		<property name="activitySector" value="Arts"/>
 		<property name="inventorName" value="Name 3"/>
 		<property name="description" value="Description 3"/>
 		<property name="webSite" value="https://www.website3.com/"/>
@@ -214,7 +214,7 @@
 	
 	<bean id="ToolRecord01" class="acme.entities.toolRecords.ToolRecord">
 		<property name="title" value="Tool Record 1" />
-		<property name="sector" value="Sector 1" />
+		<property name="sector" value="Technology" />
 		<property name="inventor" value="Inventor 1" />
 		<property name="description" value="This is a description 1" />
 		<property name="web" value="https://www.website1.com/" />
@@ -225,7 +225,7 @@
 	
 	<bean id="ToolRecord02" class="acme.entities.toolRecords.ToolRecord">
 		<property name="title" value="Tool Record 2" />
-		<property name="sector" value="Sector 2" />
+		<property name="sector" value="Science" />
 		<property name="inventor" value="Inventor 2" />
 		<property name="description" value="This is a description 2" />
 		<property name="web" value="https://www.website2.com/" />
@@ -236,7 +236,7 @@
 	
 	<bean id="ToolRecord03" class="acme.entities.toolRecords.ToolRecord">
 		<property name="title" value="Tool Record 3" />
-		<property name="sector" value="Sector 3" />
+		<property name="sector" value="Arts" />
 		<property name="inventor" value="Inventor 3" />
 		<property name="description" value="This is a description 3" />
 		<property name="web" value="https://www.website3.com/" />
@@ -247,7 +247,7 @@
 	
 	<bean id="ToolRecord04" class="acme.entities.toolRecords.ToolRecord">
 		<property name="title" value="Tool Record 4" />
-		<property name="sector" value="Sector 1" />
+		<property name="sector" value="Business" />
 		<property name="inventor" value="Inventor 2" />
 		<property name="description" value="This is a description 4" />
 		<property name="web" value="https://www.website4.com/" />
@@ -258,7 +258,7 @@
 	
 	<bean id="ToolRecord05" class="acme.entities.toolRecords.ToolRecord">
 		<property name="title" value="Tool Record 5" />
-		<property name="sector" value="Sector 3" />
+		<property name="sector" value="Health" />
 		<property name="inventor" value="Inventor 1" />
 		<property name="description" value="This is a description 5" />
 		<property name="web" value="https://www.website5.com/" />

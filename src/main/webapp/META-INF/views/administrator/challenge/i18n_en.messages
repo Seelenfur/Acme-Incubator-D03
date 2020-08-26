@@ -21,3 +21,4 @@ administrator.challenge.error.expertReward = Expert have to be in Euros
 administrator.challenge.error.averageReward = Average have to be in Euros
 administrator.challenge.error.rookieReward = Rookie have to be in Euros
 administrator.challenge.error.deadline = Deadline have to be future
+administrator.challenge.error.deadline.month = Deadline must be one month after the moment
