@@ -8,7 +8,7 @@ administrator.tool-record.form.label.indication = Codigo abierto:
 administrator.tool-record.form.label.stars = Numero de estrellas:
 
 administrator.tool-record.form.button.create = Crear
-administrator.tool-record.form.button.update = Editar
+administrator.tool-record.form.button.update = Actualizar
 administrator.tool-record.form.button.delete = Borrar
 administrator.tool-record.form.button.return = Volver
 

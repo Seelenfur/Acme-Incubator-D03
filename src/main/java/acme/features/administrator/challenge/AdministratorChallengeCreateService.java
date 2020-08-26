@@ -70,13 +70,22 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert errors != null;
 
 		//Comprobamos que el deadline es fecha futura
-		boolean isDeadlineFuture, isRookieRewardEuro, isAverageRewardEuro, isExpertRewardEuro, rookieAmount, averageAmount;
+		boolean isDeadlineFuture, isDeadlineOneMonth, isRookieRewardEuro, isAverageRewardEuro, isExpertRewardEuro, rookieAmount, averageAmount;
 
 		if (!errors.hasErrors("deadline")) {
 			Calendar calendar = new GregorianCalendar();
 			Date currentMoment = calendar.getTime();
 			isDeadlineFuture = request.getModel().getDate("deadline").after(currentMoment);
 			errors.state(request, isDeadlineFuture, "deadline", "administrator.challenge.error.deadline");
+		}
+
+		if (!errors.hasErrors("deadline")) {
+			Calendar calendar = new GregorianCalendar();
+			calendar.add(Calendar.MONTH, +1);
+			Date currentMoment = calendar.getTime();
+
+			isDeadlineOneMonth = request.getModel().getDate("deadline").after(currentMoment);
+			errors.state(request, isDeadlineOneMonth, "deadline", "administrator.challenge.error.deadline.month");
 		}
 
 		//Comprobamos que solo se puede meter Euros

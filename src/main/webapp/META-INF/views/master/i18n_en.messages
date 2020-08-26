@@ -54,7 +54,7 @@ master.menu.anonymous.links = Links
 
 master.menu.anonymous.notice = Notices
 master.menu.anonymous.list-notice = List of Notices
-master.menu.administrator.create-notice = Create Notice
+
 
 master.menu.anonymous.technology = Technology Records
 master.menu.anonymous.list-technology = List of Technology Records
@@ -93,9 +93,10 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisation = Customisation
 master.menu.administrator.shutdown = Shut down
-master.menu.administrator.list-notice = List notice
-master.menu.administrator.list-overture = List overture
+master.menu.administrator.list-notice = List of notices
+master.menu.administrator.list-overture = List of overture
 master.menu.administrator.create-overture = Create overture
+master.menu.administrator.create-notice = Create Notice
 
 master.menu.administrator.list-inquirie = List of inquiries
 master.menu.administrator.create-inquirie = Create inquirie
@@ -103,7 +104,7 @@ master.menu.administrator.create-inquirie = Create inquirie
 master.menu.administrator.create-tool-record = Create Tool Record
 master.menu.administrator.list-tool-record = List of Tool Records
 
-master.menu.administrator.list-technology = List Technology Record
+master.menu.administrator.list-technology = List of Technology Record
 master.menu.administrator.create-technology = Create Technology Record
 
 master.menu.administrator.list-banner = List Banners
@@ -112,7 +113,7 @@ master.menu.administrator.create-banner = Create Banner
 master.menu.administrator.dashboard = Dashboard
 
 master.menu.administrator.chart = Chart
-master.menu.administrator.list-challenge = List challenge
+master.menu.administrator.list-challenge = List of challenge
 master.menu.administrator.create-challenge = Create challenge
 master.menu.administrator.update-challenge = Update challenge
 master.menu.administrator.delete-challenge = Delete challenge
